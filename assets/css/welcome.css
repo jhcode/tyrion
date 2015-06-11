@@ -1,0 +1,206 @@
+body{
+	width:100%;
+	overflow: hidden;
+}
+.caption{
+	position: fixed;
+	top:200px;
+	left:100px;
+	font-size: 2em;
+	color: #fff;
+}
+
+.caption>p{
+	position: fixed;
+	top:280px;
+}
+
+.bx-wrapper{
+	position: fixed;
+	top: 230px;
+	left: 60px;
+}
+
+.logo{
+	position: fixed;
+	z-index: 1000;
+	top:30px;
+	left:50%;
+	margin-left:-75px;
+	width: 150px;
+	min-height: 10px;
+}
+
+.logo p{
+
+	position: absolute;
+	width:150px;
+	top:50px;
+	left:75px;
+	font-size: 0.6em;
+	color: #ff9602;
+}
+.logo img{
+	width: 100%;
+	height:auto;
+}
+
+.sign{
+	position: fixed;
+	z-index: 1000;
+	top:150px;
+	right:125px;
+	width: 640px;
+	min-height: 10px;	
+}
+
+.sign p{
+	text-align: center;
+}
+
+.sign>p{
+	color: #fff;
+	padding-top: 20px;
+}
+
+.sign .icon{
+	background: #fff;
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-bottom: 10px;
+	border-radius: 40px;
+	padding: 5px;
+
+	-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow:         2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.icon p{
+	color: #635D5D;
+	font-size: 1.0em;
+	line-height: 30px;
+}
+
+.signup, .signup-school{
+	background: rgba(0,0,0,0.5);
+	width:300px;
+	min-height: 10px;
+	margin-right: 20px;
+	padding: 10px;
+	padding-bottom:30px;
+	color: #fff;	
+	text-align: center;
+	float: left;	
+}
+
+.clear{
+	clear:both;
+	content:"";
+}
+
+.sign h2{
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+.simer{
+	display: inline;
+	color: #ff9602;
+}
+
+/* Modal Dialog Styles */
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	background: #fff;
+	color: #000;
+	border: 3px solid #aaa;
+	text-align: center;
+}
+
+/* Closing the Modal Dialog Window */
+.close {
+	background: #555;
+	color: #FFFFFF;
+	line-height: 30px;
+	opacity: 1;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+	background: #00d9ff;
+	background: -moz-linear-gradient(#0df, #888);
+	background: -webkit-linear-gradient(#0df, #888);
+	background: linear-gradient(#0df, #888);
+	opacity: 1;
+}
+
+.modalDialog h2{
+	background: #36a;
+	color: #fff;
+	font-weight: bold;
+	font-size: 27px;
+	text-shadow: 1px 1px 2px #bbb;
+	height: 70px;
+	margin-top: 0;
+	padding: 20px 0;
+}
+
+.modalDialog form input[type="text"],.modalDialog form input[type="email"],.modalDialog form input[type="password"]
+{
+	margin: 5px auto;
+	width: 80%;
+	border: 1px solid #bbb;
+	height: 40px;
+	padding: 5px;
+	outline: none;
+}
+
+.modalDialog form input[type="submit"]{
+	margin: 5px auto;
+	width: 80%;
+	background: #36a;
+	height: 40px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+}
+.modalDialog form input[type="submit"]:hover{
+	box-shadow: 0 0 10px #000 inset;
+}
